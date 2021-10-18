@@ -28,3 +28,4 @@ sources:
     tables:
       - name: Insurance2_Updated1 # this is the table_name
       - name: Amount
+      - name: INSURANCETABLE

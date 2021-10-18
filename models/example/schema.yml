@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+    - name: my_first_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: my_second_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+version: 2
+
+sources:
+  - name: src1 # this is the source_name
+    database: DBT_DEMO_SOURCES
+    schema: DBT
+    tables:
+      - name: Insurance2_Updated1 # this is the table_name
+      - name: Amount
